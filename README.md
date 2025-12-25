@@ -91,12 +91,12 @@ Where:
 ## Screenshots
 
 ### Main Application Interface
-![Main Interface with Table and Chart](screenshots/screenshot-main.png)
+![Main Interface with Table and Chart](Screenshots/screenshot-main.png)
 
 *Main application window showing calculation results table and graphical analysis*
 
 ### Methodology Explanation
-![Methodology Description and Calculation Verification](screenshots/screenshot-main_2.png)
+![Methodology Description and Calculation Verification](Screenshots/screenshot-main_2.png)
 
 *Detailed methodology explanation with calculation verification*
 
@@ -125,4 +125,5 @@ Excel file `data/russia_inflation.xlsx` with columns:
 [MIT License](LICENSE)
 
 ## Support
+
 Open issue on GitHub repository.
