@@ -129,7 +129,7 @@ Two compensation amounts are calculated:
 ## Screenshots
 
 ### Main Application Interface
-![Main Interface with Table and Chart](Screenshots/screenshot-main.png?v=1)
+![Main Interface with Table and Chart](Screenshots/screenshot-main.png)
 
 *Main application window showing calculation results table and graphical analysis*
 
@@ -165,5 +165,6 @@ Excel file `data/russia_inflation.xlsx` with columns:
 ## Support
 
 Open issue on GitHub repository.
+
 
 
