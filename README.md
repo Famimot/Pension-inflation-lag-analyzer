@@ -56,37 +56,75 @@ Run application:
 python main_window.py
 ```
 
-Application Interface:
-Input Parameters:
+## Application Interface
+
+### Tab "Main Results"
+**Calculation Parameters (right panel):**
 - Pension amount in 2025 (RUB)
-- Analysis start year (dropdown)
+- Analysis start year (dropdown list)
 - Analysis end year (fixed at 2025)
 
-Calculation Results:
-- Total paid amount
+**Calculation Results:**
+- Total paid
 - Average monthly losses
 - Total losses
 - Loss percentage
+- Payment in December
 
-Output Tables:
-- Year-by-year pension amounts
-- Inflation and indexation rates
-- Monthly and annual losses
-- Cumulative compensation
+**Main Table (left panel):**
+- Year
+- Monthly losses (in December prices)
+- Payment in December (in December prices)
+- Cumulative payments (in December prices)
 
-Charts:
+**Chart:**
 - Pension amount dynamics
-- Annual losses
-- Cumulative losses
+- Required compensation payments dynamics
+- Cumulative payments
+
+### Tab "Detailed Data"
+**Detailed Table:**
+- Year
+- Pension in January
+- Inflation (%)
+- Indexation (%)
+- Total paid
+- Compensation in beginning-of-year prices
+- Compensation in end-of-year prices
+- Loss percentage (%)
+
+**Chart:**
+- Inflation and pension indexation dynamics
+
+### Tab "Methodology"
+**Detailed Calculation Description:**
+- Main formulas
+- Calculation examples
+- Results interpretation
+- "Update Methodology Calculation" button
+
+### Functions:
+- Compensation calculation ("Calculate Compensation" button)
+- Export to Excel with professional formatting
+- Automatic methodology update when switching tabs
 
 ## Methodology
-Formula: `C = P × ∑[m=1 to 12] [1 - (1 + i)^(-m/12)]`
+Formula: `C_start = P × ∑[m=1 to 12] [1 - (1 + i)^(-m/12)]`
+
+Payment in December (adjusted for inflation):
+`C_end = C_start × (1 + i)`
 
 Where:
-- C = annual compensation (RUB)
-- P = pension in January (RUB)
-- i = annual inflation rate
-- m = month number
+- C_start = compensation in beginning-of-year prices (RUB)
+- C_end = actual payment in end-of-year prices (RUB)  
+- P = monthly pension in January (RUB)
+- i = annual inflation rate (decimal)
+- m = month number (1-12)
+
+### Key Insight
+Two compensation amounts are calculated:
+1. **Nominal loss** (C_start) - purchasing power erosion measured at year start
+2. **Actual payment** (C_end) - amount needed in December after annual inflation
 
 ## Screenshots
 
@@ -127,3 +165,4 @@ Excel file `data/russia_inflation.xlsx` with columns:
 ## Support
 
 Open issue on GitHub repository.
+
