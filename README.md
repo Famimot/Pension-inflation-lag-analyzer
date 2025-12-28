@@ -1,4 +1,7 @@
 # Russian Pension System: Calculation of Inflation Lag and Its Compensation Method
+**Author:** Kravtsov Gennady Grigorievich
+**Affiliation:** Research Center "Applied Statistics"  
+**ORCID:** [0009-0000-3405-1461](https://orcid.org/0009-0000-3405-1461)  
 
 ## Overview
 A Python application for calculating inflation lag in the Russian pension system and determining required compensation amounts.
@@ -162,9 +165,14 @@ Excel file `data/russia_inflation.xlsx` with columns:
 ## License
 [MIT License](LICENSE)
 
+## Citation
+If you use this software in your research, please cite:
+Kravtsov, G. G. (2025). Russian Pension System: Calculation of Inflation Lag and Its Compensation Method (Version 1.0.0) [Computer software]. GitHub. https://github.com/Famimot/Pension-inflation-lag-analyzer
+
 ## Support
 
 Open issue on GitHub repository.
+
 
 
 
