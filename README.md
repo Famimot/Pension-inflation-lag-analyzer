@@ -167,11 +167,15 @@ Excel file `data/russia_inflation.xlsx` with columns:
 
 ## Citation
 If you use this software in your research, please cite:
-Kravtsov, G. G. (2025). Russian Pension System: Calculation of Inflation Lag and Its Compensation Method (Version 1.0.0) [Computer software]. GitHub. https://github.com/Famimot/Pension-inflation-lag-analyzer
+Kravtsov, G. G. (2025). Russian Pension System: Calculation of Inflation Lag and Its Compensation Method (Version 1.0.0) [Computer software]. 
+GitHub. 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18075785.svg)](https://doi.org/10.5281/zenodo.18075785)
 
 ## Support
 
 Open issue on GitHub repository.
+
 
 
 
